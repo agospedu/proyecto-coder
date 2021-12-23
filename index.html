@@ -12,6 +12,7 @@
     />
     <title>Khala Make Up</title>
     <link rel="icon" href="assets/logo.jpeg" type="image/x/icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -82,7 +83,7 @@
         </div>
         <div class="section__content">
           <h2 class="section__content--title ubicacion">Ubicanos</h2>
-          <div class="section__content--info">
+          <div class="section__content--info" data-aos="fade-left">
             <img
               src="./assets/location-sign.svg"
               alt="Ubicanos"
@@ -92,7 +93,7 @@
               Belgrano 123 5 "A" - Ramos Mejía
             </span>
           </div>
-          <div class="section__content--info">
+          <div class="section__content--info" data-aos="fade-left">
             <img
               src="./assets/phone-1.svg"
               alt="Llamanos"
@@ -131,5 +132,9 @@
         /></a>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
