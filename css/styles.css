@@ -24,6 +24,7 @@ body {
   box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);
 
   display: flex;
+  z-index: 99;
 }
 
 .header__list {
@@ -101,6 +102,8 @@ body {
 .section__content--title {
   text-align: left;
   margin-bottom: 20px;
+  border-bottom: 1px solid;
+  margin-right: 4rem;
 }
 
 .section__content--text {
@@ -127,6 +130,8 @@ body {
 
 .ubicacion {
   text-align: center;
+  border-bottom: 0;
+  margin-right: 0;
 }
 
 /* Fin Clases Section */
@@ -299,7 +304,10 @@ body {
 
   .feed {
     flex-direction: column;
-    /* margin: 35px 0 0 0; */
+  }
+
+  .feed__container {
+    width: 100%;
   }
 
   .publicacion {
@@ -402,6 +410,10 @@ body {
     margin: 35px 100px 100px 100px;
   }
 
+  .feed__container {
+    height: 400px;
+  }
+
   .publicacion {
     width: 400px;
   }
@@ -412,6 +424,29 @@ body {
 
   .form__content--info {
     width: 400px;
+  }
+
+  .feed__container:hover {
+    background-color: #ad976b42;
+  }
+
+  .feed__container:hover img {
+    opacity: 0.35;
+    transition: 0.3s;
+  }
+
+  .bio__container {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+  }
+  .bio__container:hover {
+    background-color: #ad976b42;
+  }
+
+  .bio__container:hover img {
+    opacity: 0.6;
+    transition: 0.3s;
   }
 }
 
