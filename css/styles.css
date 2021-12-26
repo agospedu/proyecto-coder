@@ -5,11 +5,11 @@
 }
 
 html {
-  font-family: "Oswald", sans-serif;
   position: relative;
 }
 
 body {
+  font-family: "Oswald", sans-serif;
   background-color: white;
 }
 
@@ -17,13 +17,13 @@ body {
 .header {
   height: 80px;
   background-color: white;
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);
 
-  display: flex;
+  /* display: flex; */
   z-index: 99;
 }
 
@@ -40,14 +40,15 @@ body {
   color: black;
 }
 
-.header__item a:hover {
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
   color: #ad976b;
 }
 
 /* Fin Clases Header */
 
 /* Clases Slider  */
-.slider {
+.carousel {
   margin-top: 80px;
 }
 
@@ -233,8 +234,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .header {
-    padding: 1rem;
-    justify-content: space-around;
+    padding-top: 0.6rem;
   }
 
   .header__logo {
@@ -334,8 +334,7 @@ body {
 
 @media screen and (min-width: 1024px) {
   .header {
-    padding: 1rem 6rem;
-    justify-content: space-between;
+    padding-top: 0.25rem;
   }
 
   .header__logo {
