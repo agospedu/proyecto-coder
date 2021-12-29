@@ -26,7 +26,7 @@
       <nav class="navbar navbar-light bg-white navbar-expand-lg">
         <div class="container">
           <div class="float-left">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
               <img
                 src="../assets/logo.png"
                 alt="Logo Khala"
@@ -72,48 +72,11 @@
         </div>
       </nav>
     </header>
-    <main class="main">
+    <main class="main container-fluid">
       <div class="title"><h2>Contactanos</h2></div>
-
-      <section class="form">
-        <div class="form__content">
+      <section class="form row">
+        <div class="form__content col-lg-6 col-sm-12">
           <form action="#" method="GET">
-            <!-- <fieldset class="form__content--fieldset color">
-              <legend>Formulario de contacto</legend>
-              <label for="name">Nombre</label>
-              <input
-                type="text"
-                name="user_name"
-                id="name"
-                placeholder="Introduzca su nombre"
-              />
-              <br />
-              <label for="mail">Correo electronico</label>
-              <input
-                type="email"
-                name="user_mail"
-                id="mail"
-                placeholder="Introduzca su correo"
-              />
-              <br />
-              <label for="telephone">WhatsApp</label>
-              <input
-                type="tel"
-                name="user_telephone"
-                id="telephone"
-                placeholder="Introduzca su WhatsApp"
-              />
-              <br />
-              <label for="comment">Dejanos tu mensaje</label>
-              <br />
-              <textarea
-                name="user_comment"
-                id="comment"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </fieldset> -->
-
             <label for="basic-url" class="form-label">Ingresa tus datos</label>
             <div class="input-group mb-3">
               <span class="input-group-text" id="basic-addon3">Nombre</span>
@@ -151,47 +114,52 @@
                 aria-label="With textarea"
               ></textarea>
             </div>
-            <div class="row pt-4">
-              <button
-                type="button"
-                class="btn btn-outline-dark col-sm-5 float-left"
-              >
+            <div class="row justify-content-evenly pt-4">
+              <button type="reset" class="btn btn-outline-dark col-lg-5 col-4">
                 Borrar
               </button>
               <button
-                type="button"
-                class="btn btn-outline-success offset-2 col-sm-5 float-right"
+                type="submit"
+                class="btn btn-outline-success col-lg-5 col-4"
               >
                 Enviar
               </button>
             </div>
           </form>
         </div>
-        <div class="form__content">
+        <div class="form__content col-lg-6 col-sm-12">
           <iframe
-            class="section__content--map"
+            class="section__content--map pb-3"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5114297020964!2d-58.56813878517176!3d-34.64178488044972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7ef8a50b3f7%3A0x897ee29a60600598!2sETC%2C%20Belgrano%20123%2C%20B1704%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1638042278507!5m2!1ses-419!2sar"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
           ></iframe>
-          <div class="form__content--info">
-            <img
-              src="../assets/location-sign.svg"
-              alt="Ubicanos"
-              class="section__content--icon"
-            />
-            <span class="section__content--text">
-              Belgrano 123 5 "A" - Ramos Mejía
-            </span>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <div class="section__content--info" data-aos="fade-left">
+                <img
+                  src="../assets/location-sign.svg"
+                  alt="Ubicanos"
+                  class="section__content--icon"
+                />
+                <span class="section__content--text">
+                  Belgrano 123 5 "A" - Ramos Mejía
+                </span>
+              </div>
+            </div>
           </div>
-          <div class="form__content--info">
-            <img
-              src="../assets/phone-1.svg"
-              alt="Llamanos"
-              class="section__content--icon"
-            />
-            <span class="section__content--text"> 1173674155 </span>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <div class="section__content--info" data-aos="fade-left">
+                <img
+                  src="../assets/phone-1.svg"
+                  alt="Llamanos"
+                  class="section__content--icon"
+                />
+                <span class="section__content--text"> 1173674155 </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>

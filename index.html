@@ -29,7 +29,7 @@
       <nav class="navbar navbar-light bg-white navbar-expand-lg">
         <div class="container">
           <div class="float-left">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="./index.html">
               <img
                 src="./assets/logo.png"
                 alt="Logo Khala"
@@ -76,10 +76,10 @@
         </div>
       </nav>
     </header>
-    <main class="main">
+    <main class="main container-fluid">
       <div
         id="carouselExampleIndicators"
-        class="carousel slide"
+        class="carousel slide pt-2"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
@@ -146,8 +146,9 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <section class="section color">
-        <div class="section__content">
+
+      <section class="row color section align-items-center">
+        <div class="col-lg-8 col-sm-12 section__content">
           <h2 class="section__content--title">¡Hola! Somos Khala Make Up</h2>
           <p class="section__content--p">
             Bienvenidas a nuestro espacio. Khala Make Up es el lugar en el que
@@ -167,7 +168,7 @@
             vos también en una chica Khala.
           </p>
         </div>
-        <div class="section__content">
+        <div class="col-lg-4 col-sm-12">
           <img
             src="./assets/Consultorio.jpeg"
             alt="Consultorio"
@@ -175,8 +176,8 @@
           />
         </div>
       </section>
-      <section class="section section-map">
-        <div class="section-map__content">
+      <section class="section-map row">
+        <div class="section-map__content col-lg-6 col-md-12">
           <iframe
             class="section__content--map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5114297020964!2d-58.56813878517176!3d-34.64178488044972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7ef8a50b3f7%3A0x897ee29a60600598!2sETC%2C%20Belgrano%20123%2C%20B1704%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1638042278507!5m2!1ses-419!2sar"
@@ -185,25 +186,33 @@
             loading="lazy"
           ></iframe>
         </div>
-        <div class="section__content">
+        <div class="section__content col-lg-6 col-md-12">
           <h2 class="section__content--title ubicacion">Ubicanos</h2>
-          <div class="section__content--info" data-aos="fade-left">
-            <img
-              src="./assets/location-sign.svg"
-              alt="Ubicanos"
-              class="section__content--icon"
-            />
-            <span class="section__content--text">
-              Belgrano 123 5 "A" - Ramos Mejía
-            </span>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <div class="section__content--info" data-aos="fade-left">
+                <img
+                  src="./assets/location-sign.svg"
+                  alt="Ubicanos"
+                  class="section__content--icon"
+                />
+                <span class="section__content--text">
+                  Belgrano 123 5 "A" - Ramos Mejía
+                </span>
+              </div>
+            </div>
           </div>
-          <div class="section__content--info" data-aos="fade-left">
-            <img
-              src="./assets/phone-1.svg"
-              alt="Llamanos"
-              class="section__content--icon"
-            />
-            <span class="section__content--text"> 1173674155 </span>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+              <div class="section__content--info" data-aos="fade-left">
+                <img
+                  src="./assets/phone-1.svg"
+                  alt="Llamanos"
+                  class="section__content--icon"
+                />
+                <span class="section__content--text"> 1173674155 </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -244,7 +253,9 @@
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        disable: "mobile",
+      });
     </script>
   </body>
 </html>

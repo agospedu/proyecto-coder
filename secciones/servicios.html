@@ -22,25 +22,11 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <a href="../index.html">
-        <img src="../assets/logo.png" alt="Logo Khala" class="header__logo"
-      /></a>
-      <nav class="header__menu">
-        <ul class="header__list">
-          <li class="header__item"><a href="../index.html">Home</a></li>
-          <li class="header__item"><a href="#">Servicios</a></li>
-          <li class="header__item"><a href="./nosotros.html">Nosotros</a></li>
-          <li class="header__item"><a href="./galeria.html">Galeria</a></li>
-          <li class="header__item"><a href="./contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header> -->
     <header class="header fixed-top">
       <nav class="navbar navbar-light bg-white navbar-expand-lg">
         <div class="container">
           <div class="float-left">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
               <img
                 src="../assets/logo.png"
                 alt="Logo Khala"
@@ -85,17 +71,17 @@
         </div>
       </nav>
     </header>
-    <main class="main">
+    <main class="main container-fluid">
       <div class="title"><h2>Servicios</h2></div>
-      <section class="section">
-        <div class="section__content" data-aos="fade-right">
+      <section class="section row">
+        <div class="section__content col-lg-4" data-aos="fade-right">
           <img
             src="../assets/perfilado-1.jpeg"
             alt="Perfilado"
-            class="section__content--img padding-right"
+            class="section__content--img"
           />
         </div>
-        <div class="section__content" data-aos="fade-left">
+        <div class="section__content col-lg-8" data-aos="fade-left">
           <h2 class="section__content--title">Diseño y perfilado de cejas</h2>
           <p class="section__content--p">
             El diseño y perfilado de cejas es un servicio personalizado en el
@@ -114,8 +100,8 @@
           </p>
         </div>
       </section>
-      <section class="section color reverse">
-        <div class="section__content" data-aos="fade-right">
+      <section class="section row color reverse">
+        <div class="section__content col-lg-8" data-aos="fade-right">
           <h2 class="section__content--title">Lifting de pestañas</h2>
           <p class="section__content--p">
             El lifting de pestañas es una solución rápida que reemplaza la
@@ -132,23 +118,23 @@
             utilizar productos para nutrirlas como Promoter de Excel.
           </p>
         </div>
-        <div class="section__content" data-aos="fade-left">
+        <div class="section__content col-lg-4" data-aos="fade-left">
           <img
             src="../assets/lifting-1.jpeg"
             alt="Perfilado"
-            class="section__content--img padding-left"
+            class="section__content--img"
           />
         </div>
       </section>
-      <section class="section">
-        <div class="section__content" data-aos="fade-right">
+      <section class="section row">
+        <div class="section__content col-lg-4" data-aos="fade-right">
           <img
             src="../assets/brow-lamination-1.jpeg"
             alt="Perfilado"
-            class="section__content--img padding-right"
+            class="section__content--img"
           />
         </div>
-        <div class="section__content" data-aos="fade-left">
+        <div class="section__content col-lg-8" data-aos="fade-left">
           <h2 class="section__content--title">Brow Lamination</h2>
           <p class="section__content--p">
             El lamninado de cejas es un tratamiento semipermanente que se aplica
@@ -201,7 +187,9 @@
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        disable: "mobile",
+      });
     </script>
   </body>
 </html>
