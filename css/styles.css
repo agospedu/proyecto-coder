@@ -78,8 +78,6 @@ body {
 /* Clases Section */
 
 .section {
-  /* display: inline-block;
-  white-space: nowrap; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -157,9 +155,6 @@ body {
 .footer__icon {
   width: 32px;
   height: 32px;
-}
-
-.footer__link {
 }
 
 /* Fin Footer section */
