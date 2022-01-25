@@ -73,6 +73,20 @@ body {
 
 /* Clases Section */
 
+
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.section__content {
+  /* display: inline-block;
+  white-space: normal;
+  width: 50%;
+  text-align: center; */
+}
+
 .section__content--p {
   line-height: 1.6;
   text-align: justify;
@@ -138,9 +152,6 @@ body {
 .footer__icon {
   width: 32px;
   height: 32px;
-}
-
-.footer__link {
 }
 
 /* Fin Footer section */

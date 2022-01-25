@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Oswald", sans-serif;
+  position: relative; }
+
+body {
+  background-color: white; }
+
+/*Header*/
+.header {
+  height: 80px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 30px #7f89a1;
+  display: flex;
+  z-index: 99; }
+  .header .header__list {
+    list-style: none; }
+  .header .header__item {
+    display: inline-block; }
+    .header .header__item a {
+      text-decoration: none;
+      color: black; }
+      .header .header__item a:hover {
+        color: #ad976b; }
+
+/* Fin header */
+/* Slider */
+.slider {
+  margin-top: 80px; }
+  .slider .slider__img {
+    height: 400px;
+    width: 100%; }
+
+/* Fin Slider */
+/* Utiles  */
+.color {
+  background-color: #fbeed4; }
+
+.middle {
+  vertical-align: top;
+  padding-top: 1rem; }
+
+.main {
+  margin-bottom: 86px;
+  min-height: 90vh; }
+
+.flex-items-center, .section, .section .section__content--info, .footer, .title, .form .form__content--info {
+  display: flex;
+  align-items: center; }
+
+/* Fin Utiles */
+/* Section */
+.section {
+  width: 100%; }
+  .section .section__content--p {
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 30px;
+    font-size: 1.3rem; }
+  .section .section__content--title {
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+    margin-right: 4rem; }
+  .section .section__content--text {
+    line-height: 1.6;
+    text-align: justify; }
+  .section .section__content--icon {
+    height: 30px;
+    width: 40px;
+    margin-right: 3rem; }
+  .section .section__content--info {
+    text-align: left;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #fbeed4;
+    border-radius: 1rem; }
+
+.ubicacion {
+  text-align: center;
+  border-bottom: 0;
+  margin-right: 0; }
+
+/* Section */
+/* Footer section */
+.footer {
+  background-color: #d0bd98;
+  bottom: 0;
+  height: 86px;
+  width: 100%;
+  position: absolute; }
+  .footer .footer__logo {
+    height: 50px;
+    width: 50px; }
+  .footer .footer__icon {
+    height: 32px;
+    width: 32px; }
+
+/* Fin Footer section */
+/* Galeria */
+.feed {
+  display: flex;
+  justify-content: space-between; }
+
+.publicacion {
+  height: 400px; }
+
+.title {
+  justify-content: center;
+  padding-top: 7rem; }
+
+/* Fin Galeria */
+/* Nosotros */
+.bio {
+  display: flex; }
+  .bio .bio__content {
+    line-height: 1.6;
+    font-size: 1.2rem; }
+    .bio .bio__content .bio__content--img {
+      border-radius: 50%;
+      border: 1px solid black; }
+    .bio .bio__content .bio__content--text {
+      margin-bottom: 20px; }
+
+/* Fin Nosotros */
+/* Form  */
+.form {
+  display: flex;
+  justify-content: space-evenly; }
+  .form .form__content--fieldset {
+    border-radius: 1rem;
+    padding: 3rem; }
+  .form .form__content--info {
+    text-align: left;
+    padding: 1.5rem;
+    margin: 1rem 0 1rem 0;
+    background-color: #fbeed4;
+    border-radius: 1rem; }
+
+/* Fin Form  */
+/* Clases mobile */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 1rem;
+    justify-content: space-around; }
+    .header .header__logo {
+      height: 40px;
+      width: 40px; }
+    .header .header__item {
+      padding: 0.5rem; }
+      .header .header__item a {
+        font-size: 0.9rem; }
+  .section {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 26px; }
+    .section .section__content--info {
+      width: 350px; }
+    .section .section__content--map {
+      height: 350px;
+      width: 100%;
+      margin-top: 50px; }
+    .section .section__content--img {
+      height: 340px;
+      width: 100%; }
+  .section-map {
+    padding: 1rem 0; }
+    .section-map .section-map__content {
+      width: 100%; }
+  .footer {
+    padding: 1rem;
+    justify-content: space-between; }
+  .reverse {
+    flex-direction: column-reverse; }
+  .bio {
+    flex-direction: column;
+    padding: 1rem 0rem; }
+    .bio .bio__content {
+      padding: 1.5rem; }
+      .bio .bio__content .bio__content--img {
+        width: 100%; }
+  .feed {
+    flex-direction: column; }
+    .feed .feed__container {
+      width: 100%; }
+  .publicacion {
+    width: 100%; }
+  .title {
+    padding-bottom: 2rem; }
+  .form {
+    flex-direction: column; }
+    .form .form__content--info {
+      width: 354px;
+      margin-left: 10px; } }
+
+/* Fin clases mobile */
+/* Clases desktop */
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 1rem 6rem;
+    justify-content: space-between; }
+    .header .header__logo {
+      height: 50px;
+      width: 50px; }
+    .header .header__item {
+      padding: 1rem; }
+      .header .header__item .header__item a {
+        font-size: 1rem; }
+  .slider__img {
+    padding: 0 6rem; }
+  .section-map {
+    gap: 14rem; }
+    .section-map .section__content--map {
+      height: 350px;
+      width: 550px; }
+  .section {
+    padding: 1rem 6rem; }
+    .section .section__content--p {
+      padding-right: 4rem; }
+    .section .section__content--info {
+      width: 400px; }
+    .section .section__content--img {
+      height: 400px;
+      width: 400px; }
+  .footer {
+    padding: 1rem 6rem;
+    justify-content: space-between; }
+  .padding-right {
+    padding: 2rem 2rem 2rem 0; }
+  .padding-left {
+    padding: 2rem 0 2rem 2rem; }
+  .bio {
+    padding: 1rem 6rem; }
+    .bio .bio__content {
+      padding: 4rem; }
+      .bio .bio__content .bio__content--img {
+        width: 400px; }
+    .bio .bio__container {
+      border-radius: 50%;
+      height: 400px;
+      width: 400px; }
+      .bio .bio__container:hover {
+        background-color: #ad976b42; }
+        .bio .bio__container:hover:hover img {
+          opacity: 0.6;
+          transition: 0.3s; }
+  .feed {
+    margin: 35px 100px 100px 100px; }
+    .feed .feed__container {
+      height: 400px; }
+      .feed .feed__container:hover {
+        background-color: #ad976b42; }
+        .feed .feed__container:hover:hover img {
+          opacity: 0.35;
+          transition: 0.3s; }
+  .publicacion {
+    width: 400px; }
+  .form {
+    padding: 4rem; }
+    .form .form__content--info {
+      width: 400px; } }
+
+/* Fin clases desktop */
