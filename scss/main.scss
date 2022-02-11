@@ -101,6 +101,7 @@ body {
 .section-map {
   @extend .flex-items-center;
   width: 100%;
+  margin: 0;
 }
 
 .section__content--p {
@@ -227,6 +228,10 @@ body {
 /* Clases mobile */
 
 @media screen and (max-width: 1024px) {
+  .main {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .header {
     padding-top: 0.6rem;
     .header__logo {
@@ -344,14 +349,18 @@ body {
     padding: 0 6rem;
   }
 
+  .image-right {
+    text-align: right;
+    padding-right: 0;
+  }
   .section-map {
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 6rem;
   }
   .section__content--map {
     @include size(550px, 350px);
   }
   .section {
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 6rem;
   }
   .section__content--p {
     padding-right: 4rem;
